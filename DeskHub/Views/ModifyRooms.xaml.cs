@@ -64,6 +64,8 @@ public partial class ModifyRooms : ContentPage
         room.RoomID = txtRoomID.Text;
         room.RoomName = txtRoomName.Text;
         room.RoomType = pkrType.SelectedItem.ToString();
+        room.CheckIn = DateTime.MinValue;
+        room.CheckOut = DateTime.MinValue;
 
 
         if (pkrBranch.SelectedItem != null)
